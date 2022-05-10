@@ -36,8 +36,8 @@ with st.sidebar:
     st.sidebar.title("About")
     st.sidebar.info(
         """
-         Wildfire Data Platform: Near real-time and historical data of 
-        forest fuel type maps and wildfire weather conditions sourced 
+         Wildfire Data Platform: Near real-time data of 
+        forest fuel types and wildfire weather conditions sourced 
         from the NASA FIRMS satellite desk and generated using 
         CFFDRS2.0 metrics. 
     """
