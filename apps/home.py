@@ -27,7 +27,8 @@ def app():
     )
 
 
-    m = leafmap.Map(center=(52.5, -119), zoom=4)
+    m = geemap.Map(center=(52.5, -119), zoom=4)
+
     m.add_basemap("SATELLITE")
     m.to_streamlit(height=700)
     dataset_inz = ee.ImageCollection('FIRMS')
