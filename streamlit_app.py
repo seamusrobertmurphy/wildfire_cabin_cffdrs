@@ -8,7 +8,7 @@ st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 # More icons can be found here: https://icons.getbootstrap.com
 
 apps = [
-    {"func": home.app, "title": "Active Fires", "icon": "house"},
+    {"func": home.app, "title": "Home", "icon": "house"},
     {"func": heatmap.app, "title": "Heatmap", "icon": "map"},
     {"func": upload.app, "title": "Upload", "icon": "cloud-upload"},
 ]
@@ -26,7 +26,7 @@ else:
 
 with st.sidebar:
     selected = option_menu(
-        "Wildfire Dashboard",
+        "Main Menu",
         options=titles,
         icons=icons,
         menu_icon="cast",
@@ -36,10 +36,13 @@ with st.sidebar:
     st.sidebar.title("About")
     st.sidebar.info(
         """
-        Wildfire Data Platform: Near real-time and historical data of 
-        forest fuel type maps and wildfire weather conditions sourced 
-        from the NASA FIRMS satellite desk and generated using 
-        CFFDRS2.0 metrics.     """
+        This web [app](https://share.streamlit.io/giswqs/streamlit-template) is maintained by [Qiusheng Wu](https://wetlands.io). You can follow me on social media:
+            [GitHub](https://github.com/giswqs) | [Twitter](https://twitter.com/giswqs) | [YouTube](https://www.youtube.com/c/QiushengWu) | [LinkedIn](https://www.linkedin.com/in/qiushengwu).
+        
+        Source code: <https://github.com/giswqs/streamlit-template>
+
+        More menu icons: <https://icons.getbootstrap.com>
+    """
     )
 
 for app in apps:
