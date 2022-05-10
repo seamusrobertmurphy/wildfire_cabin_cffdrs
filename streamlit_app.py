@@ -26,7 +26,7 @@ else:
 
 with st.sidebar:
     selected = option_menu(
-        "Main Menu",
+        "Wildfire Data Platform",
         options=titles,
         icons=icons,
         menu_icon="cast",
@@ -36,7 +36,10 @@ with st.sidebar:
     st.sidebar.title("About")
     st.sidebar.info(
         """
-        Wildfire Data Platform: Near real-time and historical data of forest fuel type maps and wildfire weather conditions sourced from the NASA FIRMS satellite desk and generated using CFFDRS2.0 metrics.     """
+        Wildfire Data Platform: Near real-time and historical data of 
+        forest fuel type maps and wildfire weather conditions sourced 
+        from the NASA FIRMS satellite desk and generated using 
+        CFFDRS2.0 metrics.     """
     )
 
 for app in apps:
