@@ -26,7 +26,7 @@ else:
 
 with st.sidebar:
     selected = option_menu(
-        "Wildfire Data Platform",
+        "Wildfire Dashboard",
         options=titles,
         icons=icons,
         menu_icon="cast",
