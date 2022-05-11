@@ -1,6 +1,5 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
-import geemap.foliumap as geemap
 
 
 def app():
@@ -8,17 +7,13 @@ def app():
 
     st.markdown(
         """
-    We acknowledge the use of imagery provided by services from NASA's Global Imagery Browse Services (GIBS), part of NASA's Earth Observing System Data and Information System (EOSDIS).
+    A [streamlit](https://streamlit.io) app template for geospatial applications based on [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu). 
+    To create a direct link to a pre-selected menu, add `?page=<app name>` to the URL, e.g., `?page=upload`.
+    https://share.streamlit.io/giswqs/streamlit-template?page=upload
+
     """
     )
 
-    m = geemap.Map(locate_control=True)
-    m.add_basemap("TERRAIN")
-    dem = ee.Image("USGS/SRTMGL1_003")
-    vis_params = {
-    "min": 0,
-    "max": 4000,
-    "palette": ["006633", "E5FFCC", "662A00", "D8D8D8", "F5F5F5"],
-}
-    m.addLayer(dem, vis_params, "SRTM DEM", True, 0.5)
+    m = leafmap.Map(locate_control=True)
+    m.add_basemap("ROADMAP")
     m.to_streamlit(height=700)
