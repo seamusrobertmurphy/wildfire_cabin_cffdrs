@@ -17,3 +17,4 @@ def app():
         radius=20,
     )
     m.to_streamlit(height=700)
+

@@ -49,3 +49,4 @@ for app in apps:
     if app["title"] == selected:
         app["func"]()
         break
+
