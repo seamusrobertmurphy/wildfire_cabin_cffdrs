@@ -1,20 +1,18 @@
-import geemap
-import ee
-import ipyleaflet
-import os
+import streamlit as st
+import leafmap.foliumap as leafmap
+
 
 def app():
     st.title("Wildfire Monitoring & Earth Engine API")
 
     st.markdown(
         """
-    This data platform provides access to live updatessatellite imagery, earth engine collections and dataBC geodatasets used in wildfire monitoring and natural resource assessments.
+    This platform provides access to NASA satellite imagery, earth engine collections and dataBC geodatasets used in wildfire monitoring and natural resource assessments.
 
     """
     )
 
-    Map = geemap.Map(center=(52.5, -119), zoom=4)
-    dataset_inz = ee.ImageCollection('FIRMS')
-    image2 = dataset_inz.first()
-    Map.addLayer(image2, {}, 'Active Fires')
-    Map
+    m = leafmap.Map(locate_control=True)
+    m.add_basemap("SATELLITE")
+    m.to_streamlit(height=700)
+
