@@ -7,7 +7,7 @@ def app():
 
     st.markdown(
         """
-    This platform provides access to NASA satellite imagery, earth engine collections and dataBC geodatasets used in wildfire monitoring and natural resource assessments.
+    This data platform provides access to NASA satellite imagery, earth engine collections and dataBC geodatasets used in wildfire monitoring and natural resource assessments.
 
     """
     )
