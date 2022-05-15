@@ -35,7 +35,7 @@ with st.sidebar:
 
     st.sidebar.title("About")
     st.sidebar.info(
-            "This platform was adapted using the Google Earth Earth Mapping "
+            "This platform was adapted using the Earth Engine "
             "[geemap application](https://github.com/giswqs). " 
         )
 
