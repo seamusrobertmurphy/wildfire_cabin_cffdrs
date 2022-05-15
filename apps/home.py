@@ -3,13 +3,11 @@ import leafmap.foliumap as leafmap
 
 
 def app():
-    st.title("Wildfire Monitoring & Earth Engine Collections")
+    st.title("Wildfire Monitoring & Earth Engine API")
 
     st.markdown(
         """
-    A [streamlit](https://streamlit.io) app template for geospatial applications based on [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu). 
-    To create a direct link to a pre-selected menu, add `?page=<app name>` to the URL, e.g., `?page=upload`.
-    https://share.streamlit.io/giswqs/streamlit-template?page=upload
+    This platform provides access to NASA satellite imagery, earth engine collections and dataBC geodatasets used in wildfire monitoring and natural resource assessments.
 
     """
     )
