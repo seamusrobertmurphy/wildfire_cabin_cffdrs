@@ -1,6 +1,9 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
-
+import geemap
+import ee
+import ipyleaflet
+import os
 
 def app():
     st.title("Wildfire Monitoring & Earth Engine API")
@@ -12,7 +15,8 @@ def app():
     """
     )
 
-    m = leafmap.Map(locate_control=True)
-    m.add_basemap("SATELLITE")
-    m.to_streamlit(height=700)
+    m = geemap.Map(center=(52.5, -119), zoom=4)
+    dataset_inz = ee.ImageCollection('FIRMS')
+    image2 = dataset_inz.first()
+    m.addLayer(image2, {}, 'Active Fires')
 
