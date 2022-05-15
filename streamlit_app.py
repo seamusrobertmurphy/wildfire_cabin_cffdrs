@@ -35,8 +35,12 @@ with st.sidebar:
 
     st.sidebar.title("About")
     st.sidebar.info(
-            "This platform was adapted using the Earth Engine "
-            "[geemap application](https://github.com/giswqs). " 
+        """
+        This platform was developed using Earth Engine API and 
+            [geemap developer tools](https://github.com/giswqs).  
+        
+        Source code: <https://github.com/seamusrobertmurphy/wildfire_cabin_cffdrs.git>
+        """            
         )
 
 for app in apps:
