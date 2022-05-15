@@ -11,7 +11,7 @@ apps = [
     {"func": home.app, "title": "Home", "icon": "house"},
     {"func": heatmap.app, "title": "Heatmap", "icon": "map"},
     {"func": upload.app, "title": "Upload", "icon": "cloud-upload"},
-strea]
+    ]
 
 titles = [app["title"] for app in apps]
 titles_lower = [title.lower() for title in titles]
