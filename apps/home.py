@@ -3,7 +3,7 @@ import leafmap.foliumap as leafmap
 
 
 def app():
-    st.title("Wildfire Monitoring & Earth Engine API")
+    st.title("Wildfire & Earth Engine API")
 
     st.markdown(
         """
